@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-izui
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci10t-786-0002-tenant/ci10t-786-0002-app/devfile-sample-izui@sha256:fa3006c4ed077fb8bb564452a305070e439b1e692aec0498da365382ed3d5a31
+        name: my-nodejs
+        resources: {}
+status: {}
